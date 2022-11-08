@@ -1,27 +1,27 @@
-function microondas ( opcao, tempo ) {
+function microondas ( opção, tempo ) {
  
-    let tempoPadrao
+    let tempopadão
    
-    if (opcao === "pipoca") {
-        tempoPadrao = 10;
-    } else if ( opcao === "macarrão") {
-        tempoPadrao = 8;
-    }else if ( opcao === "carne") {
-        tempoPadrao = 15;
-    }else if ( opcao === "feijao") {
-        tempoPadrao = 12;
-    }else if ( opcao === "brigadeiro") {
-        tempoPadrao = 8;
+    if (opção === "pipoca") {
+        tempopadão = 10;
+    } else if ( opção === "macarrão") {
+        tempopadão = 8;
+    }else if ( opção === "carne") {
+        tempopadão = 15;
+    }else if ( opção === "feijao") {
+        tempopadão = 12;
+    }else if ( opção === "brigadeiro") {
+        tempopadão = 8;
     } else {
         return "Prato inexistente"
     }
 
     /*Checando o tempo Padrao */
-    if (tempo < tempoPadrao) {
+    if (tempo < tempopadão) {
         return "TEMPO INSUFICIENTE";
-    } else if (tempo > (2 * tempoPadrao) && tempo <= (3 * tempoPadrao)) {
+    } else if (tempo > (2 * tempopadão) && tempo <= (3 * tempopadão)) {
         return "A COMIDA QUEIMOU" 
-    } else if (tempo > (3 * tempoPadrao)) {
+    } else if (tempo > (3 * tempopadão)) {
         return "Kabummmmm!!"
     }
 
