@@ -23,8 +23,10 @@ function microondas ( opção, tempo ) {
         return "A COMIDA QUEIMOU" 
     } else if (tempo > (3 * tempopadão)) {
         return "Kabummmmm!!"
-    }
+    }else if (tempo >= (tempopadão) && tempo <= (2* tempopadão)){
+    return "PRATO PRONTO";
+}
 
 }
 console.log("_____PIPIPIPI_____")
-console.log(microondas("macarrão", 50) );
+console.log(microondas("pipoca", 3) );
